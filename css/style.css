@@ -18,7 +18,7 @@ body{
 	flex-wrap: wrap;
 	width: 100vw;
 	height: 100vh;
-	background-color: blue;
+	background-color: white;
 }
 
 /* Formatação da section inicio */
@@ -65,6 +65,7 @@ body{
 	border-radius: 50px;
 	margin: 10px;
 	border: none;
+	background-color: white;
 }
 
 /* Formatação do button da section inicio ao passar o mouse*/
@@ -80,16 +81,264 @@ body{
 	width: 100vw;
 	height: auto;
 	margin: 0;
-	background-color: blueviolet;
+	padding-bottom: 50px;
+	background-color: white;
 }
 
+/* Formatação do h1 da section oqfazemos */
+.oqfazemos h1{
+	font-size: 80px;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* Formatação do p da section oqfazemos */
+.oqfazemos p{
+	font-size: 30px;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* Formatação da div imagens */
 .imagens{
-
+	width: 100vw;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
+/* Formatação das imagens da div imagens */
 .imagens img{
 	width: 160px;
 	height: 160px;
 	padding: 10px;
-	margin: 20px;
+	margin: 50px;
+	-moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Formatação das imagens da div imagens */
+.imagens img:hover{
+	transition: 0.4s;
+	-moz-transform: scale(1.2);
+    -webkit-transition: scale(1.2);
+    transform: scale(1.2);
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	
+}
+
+/* Formatação do button da section oqfazemos */
+.oqfazemos button{
+	width: 250px;
+	height: 60px;
+	padding: 10px;
+	font-size: 15pt;
+	border-radius: 50px;
+	margin: 10px;
+	border: none;
+	background-color: rgb(255, 242, 0);
+}
+
+/* Formatação do button da section oqfazemos ao passar o mouse */
+.oqfazemos button:hover{
+	cursor: pointer;
+	background-color: black;
+	color: rgb(255, 242, 0);
+	transition: 0.5s;
+}
+
+/* Formatação da section missão*/
+.missao{
+	width: 100vw;
+	height: auto;
+	margin-top:100px;
+	padding-bottom: 50px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Formatação da div img_missao*/
+.img_missao{
+	display: inline-block;
+	justify-content: center;
+	width: 500px;
+	height: auto;
+	margin: 0;
+	padding: auto;
+}
+
+/* Formatação da imagem da div img_missao*/
+.img_missao img{
+	width: auto;
+	height: 600px;
+	margin-top: 50px;
+}
+
+/* Formatação da div info*/
+.info{
+	display: inline-block;
+	justify-content: center;
+	width: 600px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+/* Formatação do h1 da div info*/
+.info h1{
+	font-size: 100px;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* Formatação do p da div info*/
+.info p{
+	font-size: 40px;
+	text-align: center;
+	color: black;
+}
+
+/* Formatação do button da div info*/
+.info button{
+	width: 250px;
+	height: 60px;
+	padding: 10px;
+	font-size: 15pt;
+	border-radius: 50px;
+	margin: 10px;
+	border: none;
+	background-color: rgb(255, 242, 0);
+	margin-top: 50px;
+}
+
+/* Formatação do button da section oqfazemos ao passar o mouse */
+.info button:hover{
+	cursor: pointer;
+	background-color: black;
+	color: rgb(255, 242, 0);
+	transition: 0.5s;
+}
+
+/* Formatação da section servicos*/
+.servicos{
+	width: 100vw;
+	height: auto;
+	padding-bottom: 100px;
+	background-color: rgb(0, 60, 239);
+}
+
+/* Formatação da section servicos*/
+.servicos h1{
+	font-size: 100px;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* Formatação da div box*/
+.box{
+	display: inline-block;
+	justify-content: center;
+	width: 250px;
+	height: 350px;
+	margin: 10px;
+	padding: 10px;
+	background-color: white;
+	-moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Formatação da div box ao passar o mouse*/
+.box:hover{
+	-moz-transform: scale(1.1);
+    -webkit-transition: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Formatação da div box*/
+.box h1{
+	font-size: 20px;
+	color: black;
+}
+
+/* Formatação da div box*/
+.box p{
+	font-size: 17px;
+	text-align: center;
+	color: black;
+}
+
+/* Formatação da div imagem*/
+.imagem{
+	width: 100vw;
+	height: auto;
+	margin-top: 50px;
+	padding: 100px 0px;
+}
+
+/* Formatação da imagem da div imagem*/
+.imagem img{
+	width: 600px;
+	height: auto;
+	padding: 10px;
+}
+
+/* Formatação do h1 da div imagem*/
+.imagem h1{
+	text-align: center;
+	font-size: 40px;
+	color: black;
+
+}
+
+/* Formatação do p da div imagem*/
+.imagem p{
+	text-align: center;
+	font-size: 20px;
+	color: black;
+	padding: 20px;
+	margin: 0px 250px;
+}
+
+/* Formatação da div parceiros*/
+.parceiros{
+	width: 100vw;
+	height: auto;
+	margin: 0;
+	padding: 50px 0px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Formatação do h1 da div parceiros*/
+.parceiros h1{
+	font-size: 100px;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+/* Formatação da div partners */
+.partners{
+	width: 100vw;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Formatação das imagens da div partners */
+.partners img{
+	width: 225px;
+	height: auto;
+	padding: 10px;
+	margin: 10px;
+	-moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }
