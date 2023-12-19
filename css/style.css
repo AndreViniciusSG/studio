@@ -20,3 +20,76 @@ body{
 	height: 100vh;
 	background-color: blue;
 }
+
+/* Formatação da section inicio */
+.inicio{
+	width: 100vw;
+	height: auto;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	background-image: url(../imagens/img1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+/* Formatação da imagem da section inicio */
+.inicio img{
+	width: 250px;
+	height: auto;
+	padding: 20px;
+}
+
+/* Formatação do h1 da section inicio */
+.inicio h1{
+	font-size: 80pt;
+	padding: 0;
+	color: white;
+}
+
+/* Formatação do h2 da section inicio */
+.inicio h2{
+	font-size: 80pt;
+	padding: 0;
+	color: white;
+}
+
+/* Formatação do button da section inicio */
+.inicio button{
+	width: 250px;
+	height: 60px;
+	padding: 10px;
+	font-size: 15pt;
+	border-radius: 50px;
+	margin: 10px;
+	border: none;
+}
+
+/* Formatação do button da section inicio ao passar o mouse*/
+.inicio button:hover{
+	cursor: pointer;
+	background-color: rgb(0, 60, 239);
+	color: white;
+	transition: 0.5s;
+}
+
+/* Formatação da section oqfazemos */
+.oqfazemos{
+	width: 100vw;
+	height: auto;
+	margin: 0;
+	background-color: blueviolet;
+}
+
+.imagens{
+
+}
+
+.imagens img{
+	width: 160px;
+	height: 160px;
+	padding: 10px;
+	margin: 20px;
+}
