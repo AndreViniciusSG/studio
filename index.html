@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <title>Sudio Music Filter</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    
+
 </head>
 <body>
     <div class="container">
@@ -36,10 +37,14 @@
 
         </section>
         <section class="missao">
-            <div class="img_missao">
+            <div class="img_missao"  data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <img src="imagens/img6.png">
             </div>
-            <div class="info">
+            <div class="info" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <h1>Our Mission</h1>
                 <p>Professional studios offer several
                     advantages and cutting-edge
@@ -75,11 +80,17 @@
         </section>
 
         <section class="imagem">
-            <img src="imagens/img7.png">
-                <h1>Quality in devices and instruments</h1>
-                <p>Recording instruments with high sound projection, such as drums, brass and guitar, in a home studio is the most difficult task. Conventional drums require sound insulation in this case, unlike electronic drums. An authentic guitar amp sound with distortion will require a power attenuator; Digital amplifier modelers are an alternative.</p>
+            <img src="imagens/img7.png" data-aos="zoom-in" data-aos-duration="3000">
+                <h1 data-aos="fade-down">Quality in devices and instruments</h1>
+                <p data-aos="fade-down">Recording instruments with high sound projection, such as drums, brass and guitar, in a home studio is the most difficult task. Conventional drums require sound insulation in this case, unlike electronic drums. An authentic guitar amp sound with distortion will require a power attenuator; Digital amplifier modelers are an alternative.</p>
         </section>
-        <section class="fundo"></section>
+        <section class="fundo">
+            <p data-aos="fade-up" data-aos-duration="3000">Music Filter is responsible for investing in and launching several successful names in the music market. Today, in addition to being one of the largest record companies in the country, we are also one of the main highlights in the production of national entertainment content with international projections.</p>
+        </section>
+        <section class="video">
+            <iframe id="video"src="https://www.youtube.com/embed/85d7jcsDGKc"  frameborder="0" width="800" height="400"></iframe>
+        </section>
+
         <section class="galeria"></section>
         <section class="parceiros">
             <h1>Our Partners</h1>
@@ -110,6 +121,10 @@
         <footer id="rodape">
             Coded by <a class="link" href="https://github.com/AndreViniciusSG" target="_blank">André Vinícius Santos Guajajara</a>
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </div>
 </body>
 </html>

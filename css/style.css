@@ -5,6 +5,39 @@
 	box-sizing: border-box;
 }
 
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Black_font';
+    src: url(../fontes/black_forte.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Libel';
+    src: url(../fontes/libel.otf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Geo';
+    src: url(../fontes/Geometos.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
+/* Formatação para fonte */
+@font-face {
+    font-family: 'Sansation';
+    src: url(../fontes/sansation.ttf) format("truetype-variations");
+    font-weight: normal;
+    font-display: swap;
+}
+
 /* Formatação do body */
 body{
 	margin: 0;
@@ -46,8 +79,10 @@ body{
 
 /* Formatação do h1 da section inicio */
 .inicio h1{
+	font-family: Black_font;
 	font-size: 80pt;
-	padding: 0;
+	padding: auto;
+	margin 0;
 	color: white;
 	animation: backInLeft;
 	animation-duration: 2s;
@@ -55,6 +90,7 @@ body{
 
 /* Formatação do h2 da section inicio */
 .inicio h2{
+	font-family: Black_font;
 	font-size: 80pt;
 	padding: 0;
 	color: white;
@@ -62,11 +98,14 @@ body{
 	animation-duration: 2s;
 }
 
+
 /* Formatação do button da section inicio */
 .inicio button{
 	width: 250px;
 	height: 60px;
 	padding: 10px;
+	font-family: Libel;
+	letter-spacing: .2rem;
 	font-size: 15pt;
 	border-radius: 50px;
 	margin: 10px;
@@ -89,13 +128,14 @@ body{
 	width: 100vw;
 	height: auto;
 	margin: 0;
-	padding-bottom: 50px;
+	padding: 80px 0px;
 	background-color: white;
 }
 
 /* Formatação do h1 da section oqfazemos */
 .oqfazemos h1{
 	font-size: 80px;
+	font-family: Black_font;
 	color: black;
 	padding-top: 20px;
 	padding-bottom: 10px;
@@ -103,10 +143,10 @@ body{
 
 /* Formatação do p da section oqfazemos */
 .oqfazemos p{
-	font-size: 30px;
+	font-size: 25px;
+	font-family: Geo;
 	text-align: center;
-	margin-left: 100px;
-	margin-right: 100px;
+	margin: 0px 150px;
 	color: black;
 	padding-top: 20px;
 	padding-bottom: 10px;
@@ -147,6 +187,8 @@ body{
 	height: 60px;
 	padding: 10px;
 	font-size: 15pt;
+	font-family: Libel;
+	letter-spacing: .2rem;
 	border-radius: 50px;
 	margin: 10px;
 	border: none;
@@ -159,6 +201,8 @@ body{
 	background-color: black;
 	color: rgb(255, 242, 0);
 	transition: 0.5s;
+	animation: bounce;
+	animation-duration: 1s;
 }
 
 /* Formatação da section missão*/
@@ -200,7 +244,8 @@ body{
 
 /* Formatação do h1 da div info*/
 .info h1{
-	font-size: 100px;
+	font-size: 80px;
+	font-family: Geo;
 	color: black;
 	padding-top: 20px;
 	padding-bottom: 10px;
@@ -208,7 +253,8 @@ body{
 
 /* Formatação do p da div info*/
 .info p{
-	font-size: 40px;
+	font-size: 32px;
+	font-family: Geo;
 	text-align: center;
 	color: black;
 }
@@ -219,11 +265,12 @@ body{
 	height: 60px;
 	padding: 10px;
 	font-size: 15pt;
+	font-family: Libel;
+	letter-spacing: .2rem;
 	border-radius: 50px;
 	margin: 10px;
 	border: none;
 	background-color: rgb(255, 242, 0);
-	margin-top: 50px;
 }
 
 /* Formatação do button da section oqfazemos ao passar o mouse */
@@ -244,10 +291,10 @@ body{
 
 /* Formatação da section servicos*/
 .servicos h1{
-	font-size: 100px;
+	font-size: 80px;
+	font-family: Black_font;
 	color: white;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	padding: 50px 0px;
 }
 
 /* Formatação da div box*/
@@ -266,22 +313,30 @@ body{
 
 /* Formatação da div box ao passar o mouse*/
 .box:hover{
+	cursor: pointer;
 	-moz-transform: scale(1.1);
     -webkit-transition: scale(1.1);
     transform: scale(1.1);
+	animation: tada;
+	animation-duration: 1s;
+
 }
 
 /* Formatação da div box*/
 .box h1{
 	font-size: 20px;
+	font-family: Geo;
 	color: black;
+	padding: 10px;
 }
 
 /* Formatação da div box*/
 .box p{
-	font-size: 17px;
+	font-size: 13px;
+	font-family: Geo;
 	text-align: center;
 	color: black;
+	padding: 0px 10px;
 }
 
 /* Formatação da div imagem*/
@@ -303,6 +358,8 @@ body{
 .imagem h1{
 	text-align: center;
 	font-size: 40px;
+	font-family: Geo;
+	padding-top: 50px;
 	color: black;
 
 }
@@ -310,14 +367,18 @@ body{
 /* Formatação do p da div imagem*/
 .imagem p{
 	text-align: center;
-	font-size: 20px;
+	font-size: 15px;
+	font-family: Geo;
 	color: black;
-	padding: 20px;
+	padding: 15px 0px;
 	margin: 0px 250px;
 }
 
 /* Formatação da section fundo*/
 .fundo{
+	display: flex;
+	justify-content: center;
+	text-align: center;
 	width: 100vw;
 	height: 670px;
 	margin: 0;
@@ -326,6 +387,25 @@ body{
 	background-position: center;
 	background-attachment: fixed;
 	background-size: cover;
+}
+
+/* Formatação da section fundo*/
+.fundo p{
+	float: center;
+	font-size: 40px;
+	font-family: Geo;
+	text-align: center;
+	padding: 100px;
+	color: white;
+	
+}
+
+/* Formatação da div video*/
+.video{
+	width: 100vw;
+	height: auto;
+	padding: 50px;
+	background-color: white;
 }
 
 /* Formatação da div parceiros*/
@@ -340,9 +420,10 @@ body{
 /* Formatação do h1 da div parceiros*/
 .parceiros h1{
 	font-size: 100px;
+	font-family: Black_font;
 	color: black;
 	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 50px;
 }
 
 /* Formatação da div partners */
@@ -359,9 +440,13 @@ body{
 	height: auto;
 	padding: 10px;
 	margin: 10px;
-	-moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
+}
+
+/* Formatação das imagens da div partners ao passar o mouse */
+.partners img:hover{
+	cursor: pointer;
+	animation: shakeX;
+	animation-duration: 2s;
 }
 
 /* Formatação da section contatos */
@@ -376,7 +461,9 @@ body{
 /* Formatação da section contatos */
 .contatos h1{
 	font-size: 50pt;
+	font-family: Black_font;
 	padding-bottom: 20px;
+	opacity: 0.3;
 }
 
 /* Formatação div imagens_contatos */
@@ -406,4 +493,27 @@ body{
 	-moz-transform: scale(1.2);
     -webkit-transition: scale(1.2);
     transform: scale(1.2);
+}
+
+/* Formatação do rodape*/
+#rodape{
+	background-color: rgba(55, 55, 55, 1);
+	width: 100%;
+	padding: 50px;
+	color: black;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Sansation;
+}
+
+/* Formatação do link do rodape*/
+#rodape a{
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+/* Formatação do link do rodape*/
+#rodape a:hover{
+	text-decoration: underline;
 }
