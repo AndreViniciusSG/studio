@@ -82,7 +82,7 @@ body{
 	font-family: Black_font;
 	font-size: 80pt;
 	padding: auto;
-	margin 0;
+	margin: 0;
 	color: white;
 	animation: backInLeft;
 	animation-duration: 2s;
@@ -201,7 +201,7 @@ body{
 	background-color: black;
 	color: rgb(255, 242, 0);
 	transition: 0.5s;
-	animation: bounce;
+	animation: pulse;
 	animation-duration: 1s;
 }
 
@@ -279,6 +279,8 @@ body{
 	background-color: black;
 	color: rgb(255, 242, 0);
 	transition: 0.5s;
+	animation: pulse;
+	animation-duration: 1s;
 }
 
 /* Formatação da section servicos*/
@@ -289,7 +291,7 @@ body{
 	background-color: rgb(0, 60, 239);
 }
 
-/* Formatação da section servicos*/
+/* Formatação do h1 da section servicos*/
 .servicos h1{
 	font-size: 80px;
 	font-family: Black_font;
@@ -317,9 +319,7 @@ body{
 	-moz-transform: scale(1.1);
     -webkit-transition: scale(1.1);
     transform: scale(1.1);
-	animation: tada;
-	animation-duration: 1s;
-
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 /* Formatação da div box*/
@@ -516,4 +516,79 @@ body{
 /* Formatação do link do rodape*/
 #rodape a:hover{
 	text-decoration: underline;
+}
+
+/* Formatação ao diminuir a tela para uso mobile*/
+@media only screen and (min-width: 300px) and (max-width: 1000px){
+
+	/* Formatação das imagens da div imagens */
+	.imagens img{
+		width: 120px;
+		height: 120px;
+		padding: 10px;
+		margin: 20px;
+	}
+
+	/* Formatação da imagem da div img_missao*/
+	.img_missao img{
+		width: auto;
+		height: 400px;
+	}
+
+	/* Formatação do p da div info*/
+	.info p{
+		font-size: 20px;
+		font-family: Geo;
+	}
+
+	/* Formatação do button da div info*/
+	.info button{
+		margin: 50px;
+	}
+
+	/* Formatação da div box*/
+	.box{
+		width: 350px;
+		height: 450px;
+	}
+
+	/* Formatação da div box*/
+	.box h1{
+		font-size: 30px;
+	}
+
+	/* Formatação da div box*/
+	.box p{
+		font-size: 20px;
+	}
+
+	/* Formatação do p da div imagem*/
+	.imagem p{
+		font-size: 20px;
+		padding: 10px 0px;
+		margin: 0px 100px;
+	}
+
+	/* Formatação das imagens da div partners */
+	.partners img{
+		width: 155px;
+		height: auto;
+		padding: 10px;
+		margin: 10px;
+	}
+
+	/* Formatação das imagens da div imagens_contatos */
+	.imagens_contatos img{
+		width: 130px;
+		height: auto;
+		padding: 10px;
+		margin: 10px;
+	}
+
+	/* Formatação do rodape*/
+	#rodape{
+		font-size: 20pt;
+	}
+
+
 }
