@@ -5,6 +5,7 @@
     <title>Sudio Music Filter</title>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="js/script.js" defer></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -91,7 +92,48 @@
             <iframe id="video"src="https://www.youtube.com/embed/85d7jcsDGKc"  frameborder="0" width="800" height="400"></iframe>
         </section>
 
-        <section class="galeria"></section>
+        <section class="galeria">
+            <h1>Photo gallery</h1>
+            <div class="slider">
+
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="imagens/photo1.png">
+                    </div>
+                        <div class="slide">
+                            <img src="imagens/photo2.png">
+                        </div>
+                            <div class="slide">
+                                <img src="imagens/photo3.png">
+                            </div>
+                                <div class="slide">
+                                    <img src="imagens/photo4.png">
+                                </div>
+
+                                <div class="navigation-auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                </div>
+
+                </div>  
+                
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+
+            </div>
+
+        </section>
         <section class="parceiros">
             <h1>Our Partners</h1>
             <div class="partners">
